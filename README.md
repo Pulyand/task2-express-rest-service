@@ -1,43 +1,15 @@
-# basic-nodejs-mitso
+# Express REST Service - Menu Management System
 
-## Prerequisites
+## Описание
+REST API сервис для управления меню ресторана с поддержкой категорий и блюд.
 
-- Git - [Download & Install Git](https://git-scm.com/downloads).
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package
-  manager.
+## Функциональность
+- CRUD операции для Menu, Category, Dish
+- Каскадное удаление (при удалении Menu удаляются все связанные Category и Dish)
+- Валидация входных данных
+- In-memory хранение данных
 
-## Downloading
+## Установка и запуск
 
-```
-git clone {repository URL}
-```
-
-## Installing NPM modules
-
-```
+### Установка зависимостей
 npm install
-```
-
-## Running application
-
-```
-npm start
-```
-
-## Development
-
-If you're using VSCode, you can get a better developer experience from integration with
-[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and
-[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions.
-
-### Auto-fix and format
-
-```
-npm run lint
-```
-
-### Debugging in VSCode
-
-Press <kbd>F5</kbd> to debug.
-
-For more information, visit: https://code.visualstudio.com/docs/editor/debugging
